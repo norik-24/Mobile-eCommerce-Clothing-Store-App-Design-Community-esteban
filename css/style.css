@@ -33,7 +33,7 @@ button{
     font-family: "Encode-Sans-Regular";
     font-size: 18px;
     border:none;
-    background-color: var(--color-15);
+    background-color: var(--color-3);
     color:var(--color-1)
 }
 
@@ -42,6 +42,68 @@ button{
 
     width: auto;
     height: auto;
+
+
+}
+
+@media screen and (max-width:431px) {
+    
+    @import url(variables.css);
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-color: var(--color-8)
+    }
+
+    main{
+        display:grid;
+        place-items:center;
+
+
+    }
+
+    h1{
+        color:var(--color-5);
+        font-size:54px;
+        margin-top:-24%;
+        font-family: "Encode-Sans-Bold";
+    }
+
+
+    button{
+        border-radius: 12px;
+        width: 150px;
+        height: 50px;
+        color:var(--color-5);
+        font-family: "Encode-Sans-Regular";
+        font-size: 18px;
+        border:none;
+        background-color: var(--color-3);
+        color:var(--color-1)
+    }
+
+
+    .logo{
+
+        width: auto;
+        height: auto;
+
+
+}
+
+
+
+
+
+
+
+
+
 
 
 }
