@@ -127,9 +127,11 @@
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    padding: 20px;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 80px; /* Asegura que no se cubran las imágenes */
 }
+
 
 
 .imagen1, .imagen2, .imagen3, .imagen4 {
@@ -173,6 +175,22 @@ main {
     cursor: pointer;
 }
 
+.favorite-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.heart {
+    width: 24px;
+    height: 24px;
+    transition: 0.3s ease-in-out;
+}
+
+.favorited .heart {
+    content: url('../storage/img/heart-filled.png'); 
+}
+
 .model1 button img, .model2 button img, .model3 button img, .model4 button img {
     width: 18px;
     height: 18px;
@@ -197,3 +215,42 @@ main {
     font-size: 14px;
     margin-top: 5px;
 }
+
+.footer {
+    border-radius: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 60px;
+    background-color: var(--color-3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.footer-btn img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.footer-btn.active img {
+    opacity: 1;
+}
+
+.footer-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
