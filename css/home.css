@@ -73,7 +73,7 @@
     justify-self:end;
 }
 
-/* Contenedor del carrusel */
+
 .carousel {
     margin-top: 20px;
     margin-left: 10px;
@@ -82,16 +82,16 @@
     gap: 10px;
     padding: 10px;
     white-space: nowrap;
-    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
-    -ms-overflow-style: none; /* Oculta en Edge e IE */
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
 }
 
-/* Oculta la barra de desplazamiento en Chrome y Safari */
+
 .carousel::-webkit-scrollbar {
     display: none;
 }
 
-/* Botón de categoría */
+
 .category {
     display: flex;
     align-items: center;
@@ -108,15 +108,18 @@
     transition: all 0.3s ease;
 }
 
-/* Iconos dentro del botón */
+
 .category img {
     width: 20px;
     height: 20px;
 }
 
-/* Botón activo */
+
 .category.active {
-    background-color: var(--color-3, black); /* Si var(--color-3) no está definido, usa negro */
-    color: var(--color-2, white); /* Si var(--color-2) no está definido, usa blanco */
+    background-color: var(--color-3, black); 
+    color: var(--color-2, white); 
     border-radius: 8px;
+}
+.category.active img {
+    filter: brightness(0) invert(1); 
 }
