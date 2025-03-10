@@ -124,80 +124,76 @@
     filter: brightness(0) invert(1); 
 }
 
-main{
-    display:grid;
-    grid-template-columns:1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-}
-.imagen1{
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60% 20% 20%;
-}
-.model1 img{
-    position:absolute;
-    grid-row:1/2
-}
-.model2 img{
-    
-}
-
-.model3 img{
-    
-}
-
-.model4 img{
-    
-}
-
-.heart1,
-.heart2,
-.heart3,
-.heart4{
-    position:relative;
-
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 20px;
 }
 
 
+.imagen1, .imagen2, .imagen3, .imagen4 {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
 
-.model1 button{
-    position:absolute;
+
+.model1, .model2, .model3, .model4 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.model1 img, .model2 img, .model3 img, .model4 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+
+.model1 button, .model2 button, .model3 button, .model4 button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     background-color:var(--color-3);
-    border:0;
-    box-shadow: none;
-    border-radius: 16px;
-    text-align: center;
-    width:24px;
-    height: 24px;
-    margin-left:35%;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
-.model2 button{
-    position:absolute;
-    background-color:var(--color-3);
-    border:0;
-    box-shadow: none;
-    border-radius: 16px;
-    text-align: center;
-    width:24px;
-    height: 24px;
+
+.model1 button img, .model2 button img, .model3 button img, .model4 button img {
+    width: 18px;
+    height: 18px;
 }
-.model3 button{
-    position:absolute;
-    background-color:var(--color-3);
-    border:0;
-    box-shadow: none;
-    border-radius: 16px;
-    text-align: center;
-    width:24px;
-    height: 24px;
+
+
+.text1, .text2, .text3, .text4 {
+    margin-top: 10px;
+    font-family: "Encode-Sans-Regular";
+    font-size: 14px;
+    color: var(--color-3);
+    display: flex;
+    flex-direction: column;
 }
-.model4 button{
-    position:absolute;
-    background-color:var(--color-3);
-    border:0;
-    box-shadow: none;
-    border-radius: 16px;
-    text-align: center;
-    width:24px;
-    height: 24px;
+
+
+.info1, .info2, .info3, .info4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Encode-Sans-Bold", sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
 }
