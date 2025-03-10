@@ -73,40 +73,50 @@
     justify-self:end;
 }
 
+/* Contenedor del carrusel */
 .carousel {
+    margin-top: 20px;
+    margin-left: 10px;
     display: flex;
     overflow-x: auto;
     gap: 10px;
     padding: 10px;
     white-space: nowrap;
     scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
-    -ms-overflow-style: none; /* Oculta en Edge y IE */
+    -ms-overflow-style: none; /* Oculta en Edge e IE */
 }
 
+/* Oculta la barra de desplazamiento en Chrome y Safari */
 .carousel::-webkit-scrollbar {
-    display: none; /* Oculta la barra en Chrome y Safari */
+    display: none;
 }
 
+/* Botón de categoría */
 .category {
     display: flex;
     align-items: center;
     gap: 5px;
     padding: 10px 15px;
     border: 1px solid #ccc;
-    border-radius: 20px;
+    border-radius: 8px;
     background-color: white;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
+    font-family: "Encode-Sans-Medium", sans-serif;
+    width: auto;
+    height: 34px;
+    transition: all 0.3s ease;
 }
 
+/* Iconos dentro del botón */
 .category img {
     width: 20px;
     height: 20px;
 }
 
-.category-active {
-    width:92px;
-    height: 34px;
-    background-color: var(--color-3);
-    color:;
+/* Botón activo */
+.category.active {
+    background-color: var(--color-3, black); /* Si var(--color-3) no está definido, usa negro */
+    color: var(--color-2, white); /* Si var(--color-2) no está definido, usa blanco */
+    border-radius: 8px;
 }
