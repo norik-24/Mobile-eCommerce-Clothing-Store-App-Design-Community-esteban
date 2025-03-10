@@ -123,3 +123,81 @@
 .category.active img {
     filter: brightness(0) invert(1); 
 }
+
+main{
+    display:grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+.imagen1{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 20% 20%;
+}
+.model1 img{
+    position:absolute;
+    grid-row:1/2
+}
+.model2 img{
+    
+}
+
+.model3 img{
+    
+}
+
+.model4 img{
+    
+}
+
+.heart1,
+.heart2,
+.heart3,
+.heart4{
+    position:relative;
+
+}
+
+
+
+.model1 button{
+    position:absolute;
+    background-color:var(--color-3);
+    border:0;
+    box-shadow: none;
+    border-radius: 16px;
+    text-align: center;
+    width:24px;
+    height: 24px;
+    margin-left:35%;
+}
+.model2 button{
+    position:absolute;
+    background-color:var(--color-3);
+    border:0;
+    box-shadow: none;
+    border-radius: 16px;
+    text-align: center;
+    width:24px;
+    height: 24px;
+}
+.model3 button{
+    position:absolute;
+    background-color:var(--color-3);
+    border:0;
+    box-shadow: none;
+    border-radius: 16px;
+    text-align: center;
+    width:24px;
+    height: 24px;
+}
+.model4 button{
+    position:absolute;
+    background-color:var(--color-3);
+    border:0;
+    box-shadow: none;
+    border-radius: 16px;
+    text-align: center;
+    width:24px;
+    height: 24px;
+}
