@@ -44,3 +44,25 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const payButton = document.querySelector(".pay-btn");
+    const paymentPopup = document.getElementById("paymentPopup");
+    const closePopup = document.querySelector(".close-popup");
+
+    payButton.addEventListener("click", () => {
+        paymentPopup.classList.add("active");
+    });
+
+    closePopup.addEventListener("click", () => {
+        paymentPopup.classList.remove("active");
+    });
+
+    // Cerrar el popup si se hace clic fuera de él
+    paymentPopup.addEventListener("click", (e) => {
+        if (e.target === paymentPopup) {
+            paymentPopup.classList.remove("active");
+        }
+    });
+});
