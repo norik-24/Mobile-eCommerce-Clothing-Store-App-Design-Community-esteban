@@ -1,1 +1,122 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/home.css">
+
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <span class="span1">Hello, Welcome👋</span>
+            <span class="span2">Esteban Chacon</span>
+            <img class="imagen-perfil" src="../storage/img/foto-perfil.jpg">
+        </div>
+        <div class="header2">
+            <button class="filter">
+                <img class="filter-icon" src="../storage/img/filter.png" alt="Filter"></img>
+            </button>
+            <input class="search-bar"type="text" placeholder="Search clothes..">
+        </div>
+    </header>
+    <div class="carousel">
+        <button class="category active">
+            <img src="../storage/img/all-items.png" alt="All Items"> All Items
+        </button>
+        <button class="category">
+            <img src="../storage/img/dress.png" alt="Dress"> Dress
+        </button>
+        <button class="category">
+            <img src="../storage/img/shirt.png" alt="T-Shirt"> T-Shirt
+        </button>
+        <button class="category">
+            <img src="../storage/img/pants.png" alt="Pants"> Pants
+        </button>
+    </div>
+
+    <script src="../js/home.js"></script>
+    <main>
+        <div class="imagen1">
+            <div class="model1">
+                <img src="../storage/img/Product 1.png" alt="imagen de modelo">
+                <button class="favorite-btn">
+                    <img class="heart" class="heart1" src="../storage/img/heart.png">
+                </button>
+            </div>
+            <div class="text1">
+                <span>Modern Light Clothes</span>
+                <span>T-Shirt</span>
+            </div>
+            <div class="info1">
+                <span>$212.99</span>
+                <span>⭐5.0</span>
+            </div>
+        </div>
+        <div class="imagen2">
+            <div class="model2">
+                <img src="../storage/img/Product 2.png" alt="imagen de modelo">
+                <button class="favorite-btn" >
+                    <img class="heart" class="heart2"  src="../storage/img/heart.png">
+                </button>
+            </div>
+            <div class="text2">
+                <span>Light Dress Bless</span>
+                <span>Dress modern</span>
+            </div>
+            <div class="info2">
+                <span>$162.99</span>
+                <span>⭐5.0</span>
+            </div>
+        </div>
+        <div class="imagen3">
+            <div class="model3">
+                <img src="../storage/img/Product 3.png" alt="imagen de modelo">
+                <button class="favorite-btn">
+                    <img  class="heart" class="heart3" src="../storage/img/heart.png">
+                </button >
+            </div>
+            <div class="text3">
+                <span>Maroon Dark Top</span>
+                <span>Dress</span>
+            </div>
+            <div class="info3">
+                <span>$194.99</span>
+                <span>⭐5.0</span>
+            </div>
+        </div>
+        <div class="imagen4">
+            <div class="model4">
+                <img  src="../storage/img/Product 4.png" alt="imagen de modelo">
+                <button class="favorite-btn">
+                    <img class="heart" class="heart4" src="../storage/img/heart.png">
+                </button>
+            </div>
+            <div class="text4">
+                <span>Light Dress Yellow</span>
+                <span>Dress Modern</span>
+            </div>
+            <div class="info4">
+                <span>$122.99</span>
+                <span>⭐5.0</span>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <button class="footer-btn active">
+            <img src="../storage/img/Home.png" alt="Home">
+        </button>
+        <button class="footer-btn">
+            <img src="../storage/img/Cart.png" alt="Cart">
+        </button>
+        <button class="footer-btn" onclick="location.href='../views/detail.html'">
+            <img src="../storage/img/Favourite.png" alt="Favorites">
+        </button>
+        <button class="footer-btn">
+            <img src="../storage/img/Account.png" alt="Profile">
+        </button>
+    </footer>
+</body>
+</html>
