@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail</title>
+    <link rel="stylesheet" href="../css/detail3.css">
+</head>
+<body>
+    <section class="header">
+        <button onclick="location.href='../views/home.html'" class="comeback">
+            <img src="../storage/img/detail/come back.png">
+        </button>
+        <img class="model" src="../storage/img/detail/model.png">
+        <button class="heart">
+            <img src="../storage/img/detail/heart.png">
+        </button>
+    </section>
+    <main>
+        <section class="general">
+            <div>
+                <h1>Light Dress Bless</h1>
+                <div class="rating">
+                    <span>⭐ 5.0</span>
+                    <span>(7,932 reviews)</span>
+                </div>
+            </div>
+            <div class="quantity">
+                <button class="minus">-</button>
+                <span class="quantity-number">1</span>
+                <button class="plus">+</button>
+            </div>
+        </section>
+        <div class="info">
+            <p>Its simple and elegant shape makes it perfect for
+                those of you who like minimalist clothes <strong>Read More...</strong>
+            </p>
+        </div>
+        <section class="options">
+            <div class="size-container">
+                <h3>Choose Size</h3>
+                <div class="sizes">
+                    <button class="size" data-size="S">S</button>
+                    <button class="size" data-size="M">M</button>
+                    <button class="size selected" data-size="L">L</button>
+                    <button class="size" data-size="XL">XL</button>
+                </div>
+            </div>
+
+            <div class="color-container">
+                <h3 class="color-font">Color</h3>
+                <div class="colors">
+                    <button class="color selected" data-color="gray"></button>
+                    <button class="color" data-color="dark-gray"></button>
+                    <button class="color" data-color="black"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/detail.js"></script>
+
+    <footer class="cart-footer">
+        <button  onclick="location.href='../views/checkout.html'"  class="cart-button">
+            <img src="../storage/img/detail/cart.png" alt="Cart">
+            Add to Cart | <span class="price">$162.99</span> <span class="old-price">$190.99</span>
+        </button>
+    </footer>
+    
+</body>
+</html>
