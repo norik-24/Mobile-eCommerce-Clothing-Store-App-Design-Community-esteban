@@ -41,3 +41,23 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const addToCartBtn = document.querySelector(".cart-button");
+    const buttonText = addToCartBtn.querySelector("span.price");
+
+    addToCartBtn.addEventListener("click", function (event) {
+        event.preventDefault(); 
+
+        addToCartBtn.disabled = true;
+
+        // Añadir animación y cambiar texto
+        addToCartBtn.classList.add("bounce");
+        buttonText.innerHTML = "✓ Added!";
+
+        // Esperar 2 segundos antes de redirigir
+        setTimeout(() => {
+            window.location.href = "../views/checkout.html";
+        }, 2000);
+    });
+});
