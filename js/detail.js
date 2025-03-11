@@ -21,3 +21,23 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Selección de tallas
+    const sizeButtons = document.querySelectorAll(".size");
+    sizeButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            document.querySelector(".size.selected")?.classList.remove("selected");
+            button.classList.add("selected");
+        });
+    });
+
+    // Selección de colores
+    const colorButtons = document.querySelectorAll(".color");
+    colorButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            document.querySelector(".color.selected")?.classList.remove("selected");
+            button.classList.add("selected");
+        });
+    });
+});
