@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+    <header>
+        <button class="come-back" onclick="location.href='../views/detail.html'">
+            <img src="../storage/img/checkout/come-back.png">
+        </button>
+
+        <h1 class="title">checkout</h1>
+
+        <button class="menu">
+            <img src="../storage/img/checkout/menu.png">
+        </button>
+    </header>
+
+    <main>
+        <section class="list">
+            <div class="lista1">
+                <img class="model1" src="../storage/img/checkout/model1.png">
+                <h3 class="name1">Modern light clothes</h3>
+                <span class="span1">Dress modern</span>
+                <span class="span2">$212.99</span>
+                <button class="dots">
+                    <img src="../storage/img/checkout/threedots.png">
+                </button>
+                <button class="minus">-</button>
+                <span class="number">4</span>
+                <button class="plus">+</button>
+            </div>
+
+            <div class="lista1">
+                <img class="model1" src="../storage/img/checkout/model2.png">
+                <h3 class="name1">Modern light clothes</h3>
+                <span class="span1">Dress modern</span>
+                <span class="span2">$162.99</span>
+                <button class="dots">
+                    <img src="../storage/img/checkout/threedots.png">
+                </button>
+                <button class="minus">-</button>
+                <span class="number">1</span>
+                <button class="plus">+</button>
+            </div>
+        </section>
+
+        <section class="shipping">
+            <h2>Shipping Information</h2>
+            <div class="shipping-info">
+                <img class="visa" src="../storage/img/checkout/visa.png">
+                <span>**** **** **** 2143</span>
+                <img class="arrow-down" src="../storage/img/checkout/arrow-down.png">
+            </div>
+        </section>
+    
+        <section class="summary">
+            <div><span>Total (<span class="total-items">9</span> items)</span> <span class="total-price">$1,014.95</span></div>
+            <div><span>Shipping Fee</span> <span class="semibold">$0.00</span></div>
+            <div><span>Discount</span> <span class="semibold">$0.00</span></div>
+            <hr>
+            <div class="sub"><span>Sub Total</span> <strong class="subtotal">$1,014.95</strong></div>
+        </section>
+    
+        <button class="pay-btn">Pay</button>
+
+       
+        <div class="payment-popup" id="paymentPopup">
+         <div class="popup-content">
+             <img src="../storage/img/checkout/succes-icon.png" class="success-icon">
+                <h2>Payment Successful</h2>
+                <p>Your order has been placed successfully!</p>
+             <button class="close-popup">OK</button>
+         </div>
+      </div>
+
+    </main>
+    <script src="../js/checkout.js"></script>
+</body>
+</html>
