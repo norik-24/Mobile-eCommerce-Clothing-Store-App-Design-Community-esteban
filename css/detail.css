@@ -119,6 +119,17 @@ body {
     margin-top: 20px;
 }
 
+.size-container:nth-child(1){
+    font-size: 12px;
+    font-family: "Encode-Sans-Bold";
+}
+
+.color-font{
+    font-size: 12px;
+    font-family: "Encode-Sans-Bold";
+
+}
+
 .size-container, .color-container {
     display: flex;
     flex-direction: column;
