@@ -111,3 +111,63 @@ body {
     font-family: "Encode-Sans-SemiBold";
     font-size:14px;
 }
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.size-container, .color-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sizes {
+    display: flex;
+    gap: 10px;
+}
+
+.size {
+    width:26px;
+    height:26px;
+    border: 2px ;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.size:hover, .size.selected {
+    border-color: var(--color-5);
+    background: var(--color-5);
+    color: var(--color-2);
+}
+
+
+.colors {
+    display: flex;
+    gap: 10px;
+}
+
+.color {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.color.selected {
+    border: 2px solid var(--color-2);
+    outline: 2px solid var(--color-5);
+}
+
+/* Colores reales */
+.color[data-color="gray"] { background: var(--color-6); }
+.color[data-color="dark-gray"] { background: var(--color-17); }
+.color[data-color="black"] { background: var(--color-5); }
