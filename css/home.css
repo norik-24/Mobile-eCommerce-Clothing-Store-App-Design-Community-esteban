@@ -116,8 +116,8 @@
 
 
 .category.active {
-    background-color: var(--color-3, black); 
-    color: var(--color-2, white); 
+    background-color: var(--color-3); 
+    color: var(--color-2); 
     border-radius: 8px;
 }
 .category.active img {
@@ -137,10 +137,9 @@ main {
 .imagen1, .imagen2, .imagen3, .imagen4 {
     display: flex;
     flex-direction: column;
-    background: white;
+    background: var(--color-2);
     border-radius: 12px;
     padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -196,10 +195,29 @@ main {
     height: 18px;
 }
 
+.text1 :nth-of-type(2),.text2 :nth-of-type(2), .text3 :nth-of-type(2), .text4 :nth-of-type(2){
+    font-size:10px;
+    font-family: "Encode-Sans-Regular";
+}
+
+.text1 :nth-of-type(1),.text2 :nth-of-type(1), .text3 :nth-of-type(1), .text4 :nth-of-type(1){
+    font-size:14px;
+    font-family: "Encode-Sans-SemiBold";
+}
+
+.info1 :nth-of-type(2),.info2 :nth-of-type(2), .info3 :nth-of-type(2), .info4 :nth-of-type(2){
+    font-size:12px;
+    font-family: "Encode-Sans-Regular";
+}
+
+.info1 :nth-of-type(1),.info2 :nth-of-type(1), .info3 :nth-of-type(1), .info4 :nth-of-type(1){
+    font-size:14px;
+    font-family: "Encode-Sans-SemiBold";
+}
 
 .text1, .text2, .text3, .text4 {
     margin-top: 10px;
-    font-family: "Encode-Sans-Regular";
+    font-family: "Encode-Sans-SemiBold";
     font-size: 14px;
     color: var(--color-3);
     display: flex;
@@ -209,7 +227,7 @@ main {
 
 .info1, .info2, .info3, .info4 {
     display: flex;
-    justify-content: space-between;
+    gap:15%;
     align-items: center;
     font-family: "Encode-Sans-Bold", sans-serif;
     font-size: 14px;
@@ -253,4 +271,5 @@ main {
 .footer-btn:hover {
     background: rgba(0, 0, 0, 0.05);
 }
+
 
