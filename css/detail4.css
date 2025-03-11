@@ -179,9 +179,9 @@ body {
     outline: 2px solid var(--color-5);
 }
 
-.color[data-color="gray"] { background: var(--color-6); }
-.color[data-color="dark-gray"] { background: var(--color-17); }
-.color[data-color="black"] { background: var(--color-5); }
+.color[data-color="gray"] { background: var(--color-9); }
+.color[data-color="dark-gray"] { background: var(--color-16); }
+.color[data-color="black"] { background: var(--color-6); }
 
 .cart-footer {
     position: fixed;
