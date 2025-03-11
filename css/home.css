@@ -129,7 +129,7 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
-    padding-bottom: 80px; /* Asegura que no se cubran las imágenes */
+    padding-bottom: 80px; 
 }
 
 
@@ -187,7 +187,7 @@ main {
 }
 
 .favorited .heart {
-    content: url('../storage/img/heart-filled.png'); 
+    content: url('../storage/img/home/heart-filled.png'); 
 }
 
 .model1 button img, .model2 button img, .model3 button img, .model4 button img {
