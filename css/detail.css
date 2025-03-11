@@ -9,6 +9,7 @@
 
 body {
     background-color: var(--color-1);
+    padding-bottom: 80px;
 }
 
 .header {
@@ -178,7 +179,95 @@ body {
     outline: 2px solid var(--color-5);
 }
 
-/* Colores reales */
 .color[data-color="gray"] { background: var(--color-6); }
 .color[data-color="dark-gray"] { background: var(--color-17); }
 .color[data-color="black"] { background: var(--color-5); }
+
+.cart-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--color-3);
+    color: var(--color-2);
+    font-family: "Encode-Sans-Bold";
+    font-size: 14px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 90%;
+    max-width: 340px;
+    justify-content: center;
+}
+
+.cart-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 10px;
+    opacity: 0.6;
+}
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--color-3);
+    color: var(--color-2);
+    font-size: 14px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 90%;
+    max-width: 340px;
+    justify-content: center;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.cart-button:disabled {
+    cursor: not-allowed;
+    background: var(--color-8);
+}
+
+.cart-button.bounce {
+    animation: bounce 0.5s ease-in-out;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.2); }
+    50% { transform: scale(0.9); }
+    70% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.cart-button.bounce span.price {
+    animation: fadeOutIn 2s ease-in-out;
+}
+
+@keyframes fadeOutIn {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
