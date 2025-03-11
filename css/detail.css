@@ -1,0 +1,113 @@
+@import url(variables.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--color-1);
+}
+
+.header {
+    position: relative;
+}
+
+.comeback {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.model {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.general {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.general h1 {
+    font-size: 24px;
+    font-family:"Encode-Sans-Bold"
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: var(--color-15);
+    margin-top: 5px;
+}
+.rating :nth-child(2){
+    color:var(--color-16)
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: var(--color-8);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quantity span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info {
+    font-family: "Encode-Sans-Regular";
+    font-size:12px;
+    width:339px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: var(--color-15);
+    margin-top: 5px;
+}
+
+.info strong {
+    color:var(--color-5);
+    cursor: pointer;
+    font-family: "Encode-Sans-SemiBold";
+    font-size:14px;
+}
